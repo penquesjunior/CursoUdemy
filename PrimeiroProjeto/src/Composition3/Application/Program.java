@@ -12,7 +12,6 @@ import Composition3.Entities.OrderItem;
 import Composition3.Entities.OrderStatus;
 import Composition3.Entities.Product;
 
-
 public class Program {
     public static void main(String[] args) throws ParseException {
 
@@ -31,10 +30,9 @@ public class Program {
 
         Client2 client2 = new Client2(name, email, birthDate);
 
-        System.out.println("Enter order data: " );
+        System.out.println("Enter order data: ");
         System.out.print("Status: ");
         OrderStatus status = OrderStatus.valueOf(sc.next());
-
 
         Order2 order = new Order2(new Date(), status, client2);
 
@@ -53,13 +51,11 @@ public class Program {
             Product product = new Product(productName, productPrice);
             OrderItem it = new OrderItem(quantity, productPrice, product);
 
-            order.addItems(it);            
+            order.addItems(it);
 
         }
 
         System.out.println("\n" + order);
-
-
 
         sc.close();
 
