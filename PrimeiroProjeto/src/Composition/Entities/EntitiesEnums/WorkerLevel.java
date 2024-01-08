@@ -1,4 +1,4 @@
-package Composição.Entities.EntitiesEnums;
+package Composition.Entities.EntitiesEnums;
 
 public enum WorkerLevel {
 

@@ -1,5 +1,7 @@
 package Heranca.Entities;
 
+//public final class SavingsAccount extends Account {
+    //exemplo que quando coloco o final na classe ele nao pode ter subclasses
 public class SavingsAccount extends Account {
 
     private Double interestRate;
@@ -23,6 +25,11 @@ public class SavingsAccount extends Account {
 
     public void updateBalance(double amount){
         balance += balance * interestRate;
+    }
+
+    @Override
+    public final void withdraw(double amount){
+        balance -= amount;
     }
 
 }

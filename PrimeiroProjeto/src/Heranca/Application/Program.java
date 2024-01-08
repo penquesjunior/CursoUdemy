@@ -25,7 +25,9 @@ public class Program {
         BusinessAccount acc4 = (BusinessAccount) acc2; // vai ter que fazer a coversão com cast
         acc4.loan(100.0);
 
-        //BusinessAccount acc5 = (BusinessAccount) acc3; 
+        //BusinessAccount acc5 = (BusinessAccount) acc3; DEU ERRO DIRETO COMO EVITAR ?
+        //NESSE METODO DO INSTANCEOF TU TESTA O DESVIO SE FOR ENTRA SE NAO SAI.
+        //evitando o porblema
         if(acc3 instanceof BusinessAccount){
           BusinessAccount acc5 = (BusinessAccount) acc3;
           acc5.loan(200.0); 
@@ -37,5 +39,19 @@ public class Program {
             acc5.updateBalance(0);
             System.out.println("Update!");
         }
+
+
+        //EXEMPLO @OVERRIDE 
+        Account acc6 = new Account(1005, "luiz", 1000.0);
+        acc6.withdraw(200.0);
+        System.out.println("account $" + acc6.getBalance());
+
+        Account acc7 = new SavingsAccount(1006, "Baldao", 1000.00, 0.01);
+        acc7.withdraw(200.0);
+        System.out.println("Savings account $" + acc7.getBalance());
+
+        Account acc8 = new BusinessAccount(1007, "yas", 1000.00, 500.0);
+        acc8.withdraw(200.00);
+        System.out.println("business account $" + acc8.getBalance());
     }
 }

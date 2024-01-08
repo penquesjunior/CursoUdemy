@@ -1,4 +1,4 @@
-package Composição.Application;
+package Composition.Application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,10 +6,10 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Composição.Entities.Departmant;
-import Composição.Entities.HourContract;
-import Composição.Entities.Worker;
-import Composição.Entities.EntitiesEnums.WorkerLevel;
+import Composition.Entities.Departmant;
+import Composition.Entities.HourContract;
+import Composition.Entities.Worker;
+import Composition.Entities.EntitiesEnums.WorkerLevel;
 
 public class Program {
     public static void main(String[] args) throws ParseException {
