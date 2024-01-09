@@ -21,7 +21,7 @@ public class Program {
         int n = sc.nextInt();
         for (int i = 1; i <= n; i++) {
             System.out.println("Employe #" + i + " data:");
-            System.out.print("Outsourced (y/n)");
+            System.out.print("Outsourced (y/n)? ");
             char ch = sc.next().charAt(0);
             System.out.print("name: ");
             sc.nextLine();// tem que pula uma linha pois o next line vai ler apenas a proxima linha
