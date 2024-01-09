@@ -53,5 +53,15 @@ public class Program {
         Account acc8 = new BusinessAccount(1007, "yas", 1000.00, 500.0);
         acc8.withdraw(200.00);
         System.out.println("business account $" + acc8.getBalance());
+
+        //EXEMPLO DE POLIMORFISMO
+        Account x = new Account(1020, "Alex", 1000.0);
+        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+
+        System.out.println("------\nAccount: $"+x.getBalance());
+        System.out.println("savingsaccount: $"+y.getBalance());
     }
 }
